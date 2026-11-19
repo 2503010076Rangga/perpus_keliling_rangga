@@ -398,3 +398,40 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* Styling Tombol Pinjam & Tidak Tersedia di Katalog */
+.rangga_btn_pinjam {
+    margin-top: 10px;
+    background-color: #252525;
+    color: #ffffff;
+    border: none;
+    border-bottom: 3px solid #7D7D7D;
+    padding: 9px 12px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rangga_btn_pinjam:hover {
+    background-color: #545454;
+}
+
+.rangga_btn_mati {
+    margin-top: 10px;
+    background-color: #CFCFCF;
+    color: #545454;
+    border: 1px solid #7D7D7D;
+    padding: 9px 12px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: not-allowed;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rangga_buku_mati {
+    opacity: 0.88;
+}

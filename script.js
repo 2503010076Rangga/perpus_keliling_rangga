@@ -54,3 +54,23 @@ function ranggaTandaiBaca(tombol) {
     tombol.innerText = "Sudah Dibaca";
     tombol.disabled = true;
 }
+function ranggaPilihPinjam(judulBuku) {
+    if (!judulBuku) return;
+    window.location.href = "peminjaman.html?judul=" + encodeURIComponent(judulBuku);
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+    var params = new URLSearchParams(window.location.search);
+    var judul = params.get("judul");
+    var kolomBuku = document.getElementById("rangga_buku_pinjam");
+    var kolomTanggal = document.getElementById("rangga_tgl_pinjam");
+
+    if (judul && kolomBuku) {
+        kolomBuku.value = judul;
+    }
+
+    if (kolomTanggal && !kolomTanggal.value) {
+        var hariIni = new Date().toISOString().split("T")[0];
+        kolomTanggal.value = hariIni;
+    }
+});
