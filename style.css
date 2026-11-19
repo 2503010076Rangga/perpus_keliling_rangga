@@ -1,0 +1,400 @@
+/* Rangga Saputra */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CFCFCF;
+    color: #252525;
+    line-height: 1.65;
+}
+
+#rangga_header {
+    background-color: #252525;
+    border-bottom: 3px solid #7D7D7D;
+    padding: 13px 20px;
+}
+
+.rangga_nav_wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.rangga_brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #CFCFCF;
+}
+
+.rangga_brand_box {
+    width: 40px;
+    height: 40px;
+    background-color: #545454;
+    color: #ffffff;
+    border: 1px solid #7D7D7D;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.rangga_brand_title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+}
+
+.rangga_brand_sub {
+    font-size: 12px;
+    color: #CFCFCF;
+    display: block;
+}
+
+.rangga_menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.rangga_menu a {
+    text-decoration: none;
+    color: #CFCFCF;
+    font-size: 14px;
+    padding: 7px 12px;
+    border-radius: 7px;
+}
+
+.rangga_menu a:hover,
+.rangga_menu .rangga_aktif {
+    background-color: #545454;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#rangga_main {
+    max-width: 1120px;
+    margin: 26px auto;
+    padding: 0 18px;
+}
+
+.rangga_hero {
+    background-color: #545454;
+    color: #ffffff;
+    padding: 42px 38px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+    border-left: 6px solid #252525;
+}
+
+.rangga_tag {
+    display: inline-block;
+    background-color: #252525;
+    color: #CFCFCF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.rangga_hero h1 {
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    max-width: 720px;
+    color: #ffffff;
+}
+
+.rangga_hero p {
+    font-size: 15px;
+    color: #CFCFCF;
+    max-width: 700px;
+    margin-bottom: 24px;
+}
+
+.rangga_btn_group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.rangga_btn_terang {
+    background-color: #252525;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 11px 19px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #252525;
+    cursor: pointer;
+}
+
+.rangga_btn_terang:hover {
+    background-color: #7D7D7D;
+    border-color: #7D7D7D;
+}
+
+.rangga_btn_garis {
+    background-color: #CFCFCF;
+    color: #252525;
+    text-decoration: none;
+    padding: 11px 19px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #CFCFCF;
+    cursor: pointer;
+}
+
+.rangga_btn_garis:hover {
+    background-color: #7D7D7D;
+    color: #ffffff;
+    border-color: #7D7D7D;
+}
+
+.rangga_strip_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.rangga_mini_box {
+    background-color: #ffffff;
+    border: 1px solid #7D7D7D;
+    border-top: 4px solid #252525;
+    border-radius: 12px;
+    padding: 16px 18px;
+}
+
+.rangga_mini_label {
+    font-size: 12px;
+    color: #545454;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.rangga_mini_val {
+    font-size: 16px;
+    font-weight: bold;
+    color: #252525;
+}
+
+.rangga_box {
+    background-color: #ffffff;
+    border: 1px solid #7D7D7D;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.rangga_box h2 {
+    font-size: 21px;
+    margin-bottom: 8px;
+    color: #252525;
+}
+
+.rangga_ket {
+    font-size: 14px;
+    color: #545454;
+    margin-bottom: 16px;
+}
+
+.rangga_grid_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.rangga_field {
+    margin-bottom: 14px;
+}
+
+.rangga_field label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #252525;
+}
+
+.rangga_field input,
+.rangga_field select,
+.rangga_field textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #7D7D7D;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CFCFCF;
+    color: #252525;
+}
+
+.rangga_field input:focus,
+.rangga_field select:focus,
+.rangga_field textarea:focus {
+    outline: none;
+    border-color: #252525;
+    background-color: #ffffff;
+}
+
+.rangga_btn_kirim {
+    background-color: #252525;
+    color: #ffffff;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 3px solid #7D7D7D;
+}
+
+.rangga_btn_kirim:hover {
+    background-color: #545454;
+}
+
+/* Katalog Buku */
+.rangga_katalog_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 18px;
+    margin-top: 16px;
+}
+
+.rangga_item_buku {
+    background-color: #ffffff;
+    border: 1px solid #7D7D7D;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.rangga_item_buku:hover {
+    border-color: #252525;
+}
+
+.rangga_cover_buku {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    object-position: top center;
+    background-color: #CFCFCF;
+    padding: 10px;
+    border-bottom: 1px solid #7D7D7D;
+}
+
+.rangga_detail_buku {
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.rangga_kat_buku {
+    font-size: 12px;
+    color: #545454;
+    font-weight: bold;
+}
+
+.rangga_judul_buku {
+    font-size: 14px;
+    font-weight: bold;
+    color: #252525;
+}
+
+.rangga_stok_ada {
+    font-size: 13px;
+    color: #252525;
+    font-weight: bold;
+    margin-top: auto;
+    padding-top: 6px;
+}
+
+.rangga_stok_habis {
+    font-size: 13px;
+    color: #7D7D7D;
+    font-weight: bold;
+    margin-top: auto;
+    padding-top: 6px;
+}
+
+/* Info Box & Peta */
+.rangga_info_kuning {
+    background-color: #CFCFCF;
+    border-left: 4px solid #252525;
+    color: #252525;
+    padding: 12px 14px;
+    border-radius: 7px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.rangga_info_hijau {
+    background-color: #CFCFCF;
+    border-left: 4px solid #545454;
+    color: #252525;
+    padding: 12px 14px;
+    border-radius: 7px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.rangga_peta_bingkai {
+    border: 1px solid #7D7D7D;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+/* Footer */
+#rangga_footer {
+    background-color: #252525;
+    border-top: 3px solid #7D7D7D;
+    text-align: center;
+    padding: 20px;
+    margin-top: 36px;
+    font-size: 13px;
+    color: #CFCFCF;
+}
+
+/* Responsif HP */
+@media (max-width: 820px) {
+    .rangga_strip_3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .rangga_hero {
+        padding: 26px 20px;
+    }
+
+    .rangga_hero h1 {
+        font-size: 24px;
+    }
+
+    .rangga_grid_2 {
+        grid-template-columns: 1fr;
+    }
+}

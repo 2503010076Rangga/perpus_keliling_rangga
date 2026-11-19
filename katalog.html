@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Buku - Pustaka Keliling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="rangga_header">
+        <div class="rangga_nav_wrap">
+            <a href="index.html" class="rangga_brand">
+                <div class="rangga_brand_box">📖</div>
+                <div>
+                    <span class="rangga_brand_title">Pustaka Keliling</span>
+                    <span class="rangga_brand_sub">Lapak Baca Gratis Digital</span>
+                </div>
+            </a>
+            <ul class="rangga_menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tracking.html">Live Tracking</a></li>
+                <li><a href="katalog.html" class="rangga_aktif">Katalog Buku</a></li>
+                <li><a href="peminjaman.html">Peminjaman</a></li>
+                <li><a href="notifikasi.html">Notifikasi</a></li>
+                <li><a href="donasi.html">Donasi</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="rangga_main">
+        <div class="rangga_box">
+            <h2>Katalog Buku & Pengecekan Stok</h2>
+            <p class="rangga_ket">Cek ketersediaan buku sebelum datang ke lapak baca gratis.</p>
+
+            <div class="rangga_field">
+                <label for="rangga_input_cari">Cari Buku</label>
+                <input type="text" id="rangga_input_cari" onkeyup="ranggaCariBuku()" placeholder="Ketik judul atau kategori buku...">
+            </div>
+
+            <div class="rangga_katalog_grid">
+                <div class="rangga_item_buku">
+                    <img src="gambar/Seporsimieayamsebelummati.jpg" alt="Seporsi Mie Ayam Sebelum Mati" class="rangga_cover_buku">
+                    <div class="rangga_detail_buku">
+                        <span class="rangga_kat_buku">Novel Fiksi</span>
+                        <div class="rangga_judul_buku">Seporsi Mie Ayam Sebelum Mati</div>
+                        <div class="rangga_stok_ada">Tersedia</div>
+                    </div>
+                </div>
+
+                <div class="rangga_item_buku">
+                    <img src="gambar/3726mdpl.jpg" alt="3726 mdpl" class="rangga_cover_buku">
+                    <div class="rangga_detail_buku">
+                        <span class="rangga_kat_buku">Novel Fiksi</span>
+                        <div class="rangga_judul_buku">3726 mdpl</div>
+                        <div class="rangga_stok_habis">Sedang Dipinjam</div>
+                    </div>
+                </div>
+
+                <div class="rangga_item_buku">
+                    <img src="gambar/0mdpl.jpg" alt="0 mdpl" class="rangga_cover_buku">
+                    <div class="rangga_detail_buku">
+                        <span class="rangga_kat_buku">Novel Fiksi</span>
+                        <div class="rangga_judul_buku">0 mdpl</div>
+                        <div class="rangga_stok_ada">Tersedia</div>
+                    </div>
+                </div>
+
+                <div class="rangga_item_buku">
+                    <img src="gambar/memoriesofbandung.jpg" alt="Memories Of Bandung" class="rangga_cover_buku">
+                    <div class="rangga_detail_buku">
+                        <span class="rangga_kat_buku">Novel Fiksi</span>
+                        <div class="rangga_judul_buku">Memories Of Bandung</div>
+                        <div class="rangga_stok_ada">Tersedia</div>
+                    </div>
+                </div>
+
+                <div class="rangga_item_buku">
+                    <img src="gambar/tentangkamu.jpg" alt="Tentang Kamu" class="rangga_cover_buku">
+                    <div class="rangga_detail_buku">
+                        <span class="rangga_kat_buku">Novel Fiksi</span>
+                        <div class="rangga_judul_buku">Tentang Kamu</div>
+                        <div class="rangga_stok_habis">Sedang Dipinjam</div>
+                    </div>
+                </div>
+
+                  <div class="rangga_item_buku">
+                    <img src="gambar/bandungmenjelangpagi.jpg" alt="Bandung Menjelang Pagi" class="rangga_cover_buku">
+                    <div class="rangga_detail_buku">
+                        <span class="rangga_kat_buku">Novel Fiksi</span>
+                        <div class="rangga_judul_buku">Bandung Menjelang Pagi</div>
+                        <div class="rangga_stok_habis">Sedang Dipinjam</div>
+                    </div>
+                </div>
+
+                  <div class="rangga_item_buku">
+                    <img src="gambar/berandalbandung.jpg" alt="Berandal Bandung" class="rangga_cover_buku">
+                    <div class="rangga_detail_buku">
+                        <span class="rangga_kat_buku">Novel Fiksi</span>
+                        <div class="rangga_judul_buku">Berandal Bandung</div>
+                        <div class="rangga_stok_habis">Sedang Dipinjam</div>
+                    </div>
+                </div>
+
+                  <div class="rangga_item_buku">
+                    <img src="gambar/nostalgia.jpg" alt="Nostalgia With Bandung" class="rangga_cover_buku">
+                    <div class="rangga_detail_buku">
+                        <span class="rangga_kat_buku">Novel Fiksi</span>
+                        <div class="rangga_judul_buku">Nostalgia With Bandung</div>
+                        <div class="rangga_stok_habis">Sedang Dipinjam</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="rangga_footer">
+        <p>Perpustakaan Keliling / Lapak Baca Gratis Berbasis Digital</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

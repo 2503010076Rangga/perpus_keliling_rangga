@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Pustaka Keliling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="rangga_header">
+        <div class="rangga_nav_wrap">
+            <a href="index.html" class="rangga_brand">
+                <div class="rangga_brand_box">📖</div>
+                <div>
+                    <span class="rangga_brand_title">Pustaka Keliling</span>
+                    <span class="rangga_brand_sub">Lapak Baca Gratis Digital</span>
+                </div>
+            </a>
+            <ul class="rangga_menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tracking.html">Live Tracking</a></li>
+                <li><a href="katalog.html">Katalog Buku</a></li>
+                <li><a href="peminjaman.html">Peminjaman</a></li>
+                <li><a href="notifikasi.html">Notifikasi</a></li>
+                <li><a href="donasi.html">Donasi</a></li>
+                <li><a href="kontak.html" class="rangga_aktif">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="rangga_main">
+        <div class="rangga_box" style="max-width: 640px; margin: 0 auto;">
+            <h2>Kontak Pengelola</h2>
+            <p class="rangga_ket">Kirim pesan, pertanyaan, atau saran terkait layanan perpustakaan keliling.</p>
+
+            <form onsubmit="ranggaKirimForm(event, 'Pesan Anda sudah terkirim ke pengelola.')">
+                <div class="rangga_field">
+                    <label for="rangga_nama_kontak">Nama Pengirim</label>
+                    <input type="text" id="rangga_nama_kontak" required placeholder="Masukkan nama Anda">
+                </div>
+
+                <div class="rangga_field">
+                    <label for="rangga_email_kontak">Email atau Kontak</label>
+                    <input type="text" id="rangga_email_kontak" required placeholder="Masukkan email atau nomor HP">
+                </div>
+
+                <div class="rangga_field">
+                    <label for="rangga_pesan_kontak">Isi Pesan</label>
+                    <textarea id="rangga_pesan_kontak" rows="5" required placeholder="Tuliskan pesan Anda..."></textarea>
+                </div>
+
+                <button type="submit" class="rangga_btn_kirim">Kirim Pesan</button>
+            </form>
+        </div>
+    </main>
+
+    <footer id="rangga_footer">
+        <p>Perpustakaan Keliling / Lapak Baca Gratis Berbasis Digital</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

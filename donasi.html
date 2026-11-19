@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donasi & Relawan - Pustaka Keliling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="rangga_header">
+        <div class="rangga_nav_wrap">
+            <a href="index.html" class="rangga_brand">
+                <div class="rangga_brand_box">📖</div>
+                <div>
+                    <span class="rangga_brand_title">Pustaka Keliling</span>
+                    <span class="rangga_brand_sub">Lapak Baca Gratis Digital</span>
+                </div>
+            </a>
+            <ul class="rangga_menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tracking.html">Live Tracking</a></li>
+                <li><a href="katalog.html">Katalog Buku</a></li>
+                <li><a href="peminjaman.html">Peminjaman</a></li>
+                <li><a href="notifikasi.html">Notifikasi</a></li>
+                <li><a href="donasi.html" class="rangga_aktif">Donasi</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="rangga_main">
+        <div class="rangga_box" style="max-width: 640px; margin: 0 auto;">
+            <h2>Donasi Buku & Pendaftaran Relawan</h2>
+            <p class="rangga_ket">Dukung gerakan literasi dengan menyumbangkan buku layak baca atau mendaftar sebagai relawan.</p>
+
+            <form onsubmit="ranggaKirimForm(event, 'Pendaftaran donasi / relawan berhasil dikirim.')">
+                <div class="rangga_field">
+                    <label for="rangga_nama_donasi">Nama Lengkap</label>
+                    <input type="text" id="rangga_nama_donasi" required placeholder="Masukkan nama Anda">
+                </div>
+
+                <div class="rangga_field">
+                    <label for="rangga_jenis_donasi">Jenis Partisipasi</label>
+                    <select id="rangga_jenis_donasi">
+                        <option value="Donasi Buku">Donasi Buku</option>
+                        <option value="Relawan Lapak Baca">Relawan Lapak Baca</option>
+                        <option value="Donasi dan Relawan">Donasi dan Relawan</option>
+                    </select>
+                </div>
+
+                <div class="rangga_field">
+                    <label for="rangga_ket_donasi">Keterangan Buku / Minat Relawan</label>
+                    <textarea id="rangga_ket_donasi" rows="4" required placeholder="Tuliskan judul buku yang ingin didonasikan atau jadwal luang relawan..."></textarea>
+                </div>
+
+                <button type="submit" class="rangga_btn_kirim">Kirim Formulir</button>
+            </form>
+        </div>
+    </main>
+
+    <footer id="rangga_footer">
+        <p>Perpustakaan Keliling / Lapak Baca Gratis Berbasis Digital</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

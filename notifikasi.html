@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifikasi - Pustaka Keliling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="rangga_header">
+        <div class="rangga_nav_wrap">
+            <a href="index.html" class="rangga_brand">
+                <div class="rangga_brand_box">📖</div>
+                <div>
+                    <span class="rangga_brand_title">Pustaka Keliling</span>
+                    <span class="rangga_brand_sub">Lapak Baca Gratis Digital</span>
+                </div>
+            </a>
+            <ul class="rangga_menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tracking.html">Live Tracking</a></li>
+                <li><a href="katalog.html">Katalog Buku</a></li>
+                <li><a href="peminjaman.html">Peminjaman</a></li>
+                <li><a href="notifikasi.html" class="rangga_aktif">Notifikasi</a></li>
+                <li><a href="donasi.html">Donasi</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="rangga_main">
+        <!-- 1. Cek Jatuh Tempo Peminjaman -->
+        <div class="rangga_box">
+            <h2>Cek Jatuh Tempo Peminjaman</h2>
+            <p class="rangga_ket">Masukkan nama peminjam atau nomor HP untuk melihat batas pengembalian buku.</p>
+
+            <div class="rangga_field">
+                <label for="rangga_cek_pinjam">Nama atau Nomor HP</label>
+                <input type="text" id="rangga_cek_pinjam" placeholder="Contoh: ale atau 0812...">
+            </div>
+
+            <button type="button" class="rangga_btn_kirim" onclick="ranggaCekJatuhTempo()">Cek Status Pengembalian</button>
+
+            <div id="rangga_hasil_cek" class="rangga_info_kuning" style="margin-top: 14px; display: none;"></div>
+        </div>
+
+        <!-- 2. Daftar Notifikasi & Pengingat -->
+        <div class="rangga_box">
+            <h2>Notifikasi &amp; Pengingat Pengembalian Buku</h2>
+            <p class="rangga_ket">Pengingat batas waktu pengembalian agar buku dapat dibaca pengunjung lain.</p>
+
+            <div class="rangga_btn_group" style="margin-bottom: 16px;">
+                <button type="button" class="rangga_btn_terang" onclick="ranggaFilterNotif('semua')">Semua</button>
+                <button type="button" class="rangga_btn_garis" onclick="ranggaFilterNotif('tempo')">Jatuh Tempo</button>
+                <button type="button" class="rangga_btn_garis" onclick="ranggaFilterNotif('jadwal')">Jadwal Lapak</button>
+            </div>
+
+            <div class="rangga_info_kuning rangga_item_notif" data-tipe="tempo">
+                <strong>Pengingat Pengembalian:</strong> Buku <em>Seporsi Mie Ayam Sebelum Mati</em> perlu dikembalikan paling lambat besok (20 November 2026).
+                <div style="margin-top: 8px;">
+                    <button type="button" class="rangga_btn_garis" onclick="ranggaTandaiBaca(this)">Tandai Dibaca</button>
+                </div>
+            </div>
+
+            <div class="rangga_info_hijau rangga_item_notif" data-tipe="jadwal">
+                <strong>Info Jadwal Mangkal:</strong> Lapak baca keliling hadir hari ini pukul 15.00 - 17.30 WIB di Taman Kota Tasikmalaya.
+                <div style="margin-top: 8px;">
+                    <button type="button" class="rangga_btn_garis" onclick="ranggaTandaiBaca(this)">Tandai Dibaca</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="rangga_footer">
+        <p>Perpustakaan Keliling / Lapak Baca Gratis Berbasis Digital</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

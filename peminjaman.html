@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peminjaman Mandiri - Pustaka Keliling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="rangga_header">
+        <div class="rangga_nav_wrap">
+            <a href="index.html" class="rangga_brand">
+                <div class="rangga_brand_box">📖</div>
+                <div>
+                    <span class="rangga_brand_title">Pustaka Keliling</span>
+                    <span class="rangga_brand_sub">Lapak Baca Gratis Digital</span>
+                </div>
+            </a>
+            <ul class="rangga_menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tracking.html">Live Tracking</a></li>
+                <li><a href="katalog.html">Katalog Buku</a></li>
+                <li><a href="peminjaman.html" class="rangga_aktif">Peminjaman</a></li>
+                <li><a href="notifikasi.html">Notifikasi</a></li>
+                <li><a href="donasi.html">Donasi</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="rangga_main">
+        <div class="rangga_box" style="max-width: 640px; margin: 0 auto;">
+            <h2>Peminjaman Buku Digital / Mandiri</h2>
+            <p class="rangga_ket">Catat peminjaman buku dengan rapi agar sirkulasi bacaan mudah dipantau relawan.</p>
+
+            <form onsubmit="ranggaKirimForm(event, 'Data peminjaman buku sudah tercatat.')">
+                <div class="rangga_field">
+                    <label for="rangga_nama_pinjam">Nama Lengkap</label>
+                    <input type="text" id="rangga_nama_pinjam" required placeholder="Masukkan nama peminjam">
+                </div>
+
+                <div class="rangga_field">
+                    <label for="rangga_wa_pinjam">Nomor WhatsApp / Anggota</label>
+                    <input type="text" id="rangga_wa_pinjam" required placeholder="Contoh: 081234567890">
+                </div>
+
+                <div class="rangga_field">
+                    <label for="rangga_buku_pinjam">Judul Buku</label>
+                    <input type="text" id="rangga_buku_pinjam" required placeholder="Judul buku yang dipinjam">
+                </div>
+
+                <div class="rangga_field">
+                    <label for="rangga_tgl_pinjam">Tanggal Pinjam</label>
+                    <input type="date" id="rangga_tgl_pinjam" required>
+                </div>
+
+                <button type="submit" class="rangga_btn_kirim">Simpan Peminjaman</button>
+            </form>
+        </div>
+    </main>
+
+    <footer id="rangga_footer">
+        <p>Perpustakaan Keliling / Lapak Baca Gratis Berbasis Digital</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
